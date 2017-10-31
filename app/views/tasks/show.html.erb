@@ -1,0 +1,7 @@
+<!-- show.html.erb
+
+Should display the task's details (content, date of creation, etc.) and a back-link to the index page. -->
+
+<h1> Show a task </h1>
+<p><%= "#{@task[:id]} - #{@task[:title]} : #{@task[:content]}" %></p>
+<p><%= link_to "Back to all tasks", tasks_path %></p>
